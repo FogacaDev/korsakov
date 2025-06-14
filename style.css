@@ -1,0 +1,197 @@
+/* style.css - KorsakoV Thrash Metal Band */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0e0e0e;
+  color: #f0f0f0;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid crimson;
+}
+
+header h1 {
+  font-family: 'Metal Mania', cursive;
+  font-size: 3em;
+  margin: 0;
+  color: crimson;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+  padding: 8px 15px;
+  background-color: crimson;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #a00000;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  color: crimson;
+  border-bottom: 2px solid crimson;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-family: 'Metal Mania', cursive;
+}
+
+.galeria {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria img {
+  width: 250px;
+  height: auto;
+  border: 2px solid crimson;
+  border-radius: 5px;
+}
+
+iframe {
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-top: 3px solid crimson;
+  color: #999;
+}
+
+a {
+  color: crimson;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .galeria img {
+    width: 100%;
+  }
+}
+.active-section {
+  transition: all 0.6s ease;
+  transform: scale(1.02);
+  box-shadow: 0 0 20px crimson;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: crimson;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #a00000;
+}
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+#anuncios-monetizacao, #doacoes {
+  background: #1e1e1e;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.ads-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.ad {
+  background-color: #2a2a2a;
+  border: 1px solid crimson;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.ad img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.doacao-opcoes {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.doacao-opcoes div {
+  background: #2a2a2a;
+  padding: 20px;
+  border: 1px solid crimson;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.botao-doar {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: crimson;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.botao-doar:hover {
+  background-color: #a00000;
+}
